@@ -35,7 +35,7 @@ jobs:
       uses: azure/setup-kubectl@v1
 
     - name: Load AWS EKS credentials
-      run: aws eks update-kubeconfig --name saloer-app  --region us-east-1 # Change to your cluster name
+      run: aws eks update-kubeconfig --name saloer-app  --region us-west-2 # Change to your cluster name
 
     - name: Update Deployment Image 
       run: |
